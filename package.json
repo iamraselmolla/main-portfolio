@@ -1,0 +1,32 @@
+{
+  "name": "portfolio",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@emailjs/browser": "^3.11.0",
+    "@react-icons/all-files": "^4.1.0",
+    "autoprefixer": "10.4.14",
+    "eslint": "8.44.0",
+    "eslint-config-next": "13.4.8",
+    "file-saver": "^2.0.5",
+    "next": "13.4.8",
+    "next-themes": "^0.2.1",
+    "postcss": "8.4.24",
+    "preline": "^1.9.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-icons": "^4.10.1",
+    "react-vertical-timeline-component": "^3.6.0",
+    "sweetalert": "^2.1.2",
+    "tailwind-scrollbar-hide": "^1.1.7"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.3.2"
+  }
+}
