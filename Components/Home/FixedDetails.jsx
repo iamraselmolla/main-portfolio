@@ -29,7 +29,7 @@ export default function FixedDetails() {
             src={profile}
             alt="profile"
             width={250}
-            height={300}
+            height={150}
           ></Image>
           <div className="pt-[100px] pb-8">
             <div className="pt-5">
