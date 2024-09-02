@@ -27,7 +27,7 @@ export default function Contact() {
         "service_60bgamg",
         "template_ltt18lq",
         form.current,
-        "HezMXD0As9WvPmZmG"
+        process.env.REACT_APP_EMAILJS_PUBLIC_KEY
       )
       .then(
         (result) => {
