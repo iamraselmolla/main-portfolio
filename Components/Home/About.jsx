@@ -60,7 +60,7 @@ export default function About() {
             </div>
           </div>
           <div className="border-2 bg-[#FCF4FF] dark:bg-[#111111] gap-6 dark:border-2 dark:border-[#292929] w-full h-48 rounded-lg shadow-lg flex items-center p-6">
-            <FaWordpress className="text-6xl mr-4 text-blue-800" />
+            <FaWordpress size={60} className="text-6xl mr-4 text-blue-800" />
             <div>
               <h2 className="text-2xl font-semibold text-black dark:text-white">
                 WordPress Design
