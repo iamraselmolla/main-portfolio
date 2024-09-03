@@ -60,24 +60,29 @@ function Projects() {
                   {project.description}
                 </p>
                 <div className="flex justify-between items-center mt-4">
-                  {/* {project.liveLink && (
-                    <Link
-                      href={project.liveLink} // Set the correct href here
+                  {project?.liveLink && (
+                    <a
+                      href={`${project.liveLink}`} // External link, so use <a> tag
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="text-green-500 flex items-center text-sm hover:text-green-600 transition-colors duration-300"
                     >
                       Live Preview
                       <LuExternalLink className="ml-2" />
-                    </Link>
+                    </a>
                   )}
-                  {project.githubLink && (
-                    <Link
-                      href={project.githubLink} // Set the correct href here
+                  {project?.githubLink && (
+                    <a
+                      href={`${project.githubLink}`} // External link, so use <a> tag
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="text-gray-700 dark:text-gray-300 flex items-center text-sm hover:text-gray-500 transition-colors duration-300"
                     >
                       GitHub
                       <LuGitHub className="ml-2" />
-                    </Link>
-                  )} */}
+                    </a>
+                  )}
+
                 </div>
                 {project.skills && (
                   <div className="mt-4 flex flex-wrap gap-2">
