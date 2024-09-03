@@ -9,6 +9,7 @@ import daeImage from "../../assets/Images/dae.png";
 import bengalShop from "../../assets/Images/bengal-shop.png";
 import buyWatch from "../../assets/Images/buy-watch.png";
 import assetListing from "../../assets/Images/asset.png";
+import research from "../../assets/Images/research.png";
 
 // Dummy data for demonstration. Replace with actual image paths and links.
 const projectData = [
@@ -42,6 +43,14 @@ const projectData = [
     description: "",
     liveLink: "https://assests-listing.netlify.app/",
     githubLink: "https://github.com/iamraselmolla/assests-listing-nextJs",
+    skills: ["React", "Next.js", "MongoDB", "Node.js"]
+  },
+  {
+    image: research, // Ensure the path is correct
+    title: "Research, Conferences & Events",
+    description: "",
+    liveLink: "https://submitresearch.netlify.app/",
+    githubLink: "https://github.com/iamraselmolla/research",
     skills: ["React", "Next.js", "MongoDB", "Node.js"]
   },
   // Add more project objects here if needed

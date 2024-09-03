@@ -15,7 +15,9 @@ const About = () => {
         </div>
         <div>
           <p className="text-[15px] text-[#646464] dark:text-[#A6A6A6] py-5">
-            A self-motivated, creative, and hardworking individual with a strong ability to solve problems efficiently. I excel in communication and teamwork, consistently delivering high-quality work within deadlines. I am seeking a position as a Front-end Developer (Reactjs) to leverage my skills in a dynamic company.
+            I’m a dedicated Full Stack Developer with a passion for learning and growth. My experience spans from Web Development at Weblabx.com to completing over 130 projects as a freelancer on Fiverr.com. I recently expanded my skills during a Full Stack Developer internship at Arterns.in. <br />
+
+            I’m self-motivated, hard-working, and committed to continuous improvement. I have a keen interest in software design, architecture, and all aspects of software engineering, always eager to tackle new challenges and contribute to innovative projects.
           </p>
         </div>
         <div className="flex items-center py-5">
