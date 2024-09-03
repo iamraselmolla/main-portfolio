@@ -1,6 +1,5 @@
 import React from "react";
-import Image from "next/image";
-import { FaReact, FaWordpress, FaMobileAlt, FaDatabase, FaServer, FaLaptopCode } from "react-icons/fa";
+import { FaReact, FaWordpress, FaMobileAlt, FaDatabase, FaServer } from "react-icons/fa";
 import { MdOutlineArchitecture } from "react-icons/md";
 import Footer from "./Footer";
 
@@ -26,9 +25,10 @@ export default function About() {
           <div className="border border-green-400 w-28 ml-14"></div>
         </div>
         <div className="space-y-6">
-          <div className="border-2 bg-[#FCF4FF] dark:bg-[#111111] gap-6 dark:border-2 dark:border-[#292929] w-full h-48 rounded-lg shadow-lg flex items-center p-6">
-            <FaReact className="text-6xl mr-4 text-blue-600" />
-            <div>
+          {/** Front-end Development **/}
+          <div className="border-2 bg-[#FCF4FF] dark:bg-[#111111] gap-6 dark:border-2 dark:border-[#292929] w-full rounded-lg shadow-lg flex flex-col md:flex-row items-center p-6">
+            <FaReact className="text-7xl md:text-6xl text-blue-600" />
+            <div className="mt-4 md:mt-0 text-center md:text-left">
               <h2 className="text-2xl font-semibold text-black dark:text-white">
                 Front-end Development
               </h2>
@@ -37,9 +37,10 @@ export default function About() {
               </p>
             </div>
           </div>
-          <div className="border-2 bg-[#FEFAF0] dark:bg-[#111111] gap-6 dark:border-2 dark:border-[#292929] w-full h-48 rounded-lg shadow-lg flex items-center p-6">
-            <FaDatabase className="text-6xl mr-4 text-green-700" />
-            <div>
+          {/** MERN Stack Development **/}
+          <div className="border-2 bg-[#FEFAF0] dark:bg-[#111111] gap-6 dark:border-2 dark:border-[#292929] w-full rounded-lg shadow-lg flex flex-col md:flex-row items-center p-6">
+            <FaDatabase className="text-7xl md:text-6xl text-green-700" />
+            <div className="mt-4 md:mt-0 text-center md:text-left">
               <h2 className="text-2xl font-semibold text-black dark:text-white">
                 MERN Stack Development
               </h2>
@@ -48,9 +49,10 @@ export default function About() {
               </p>
             </div>
           </div>
-          <div className="border-2 bg-[#FFF4F4] dark:bg-[#111111] gap-6 dark:border-2 dark:border-[#292929] w-full h-48 rounded-lg shadow-lg flex items-center p-6">
-            <FaMobileAlt className="text-6xl mr-4 text-blue-400" />
-            <div>
+          {/** Mobile App Development **/}
+          <div className="border-2 bg-[#FFF4F4] dark:bg-[#111111] gap-6 dark:border-2 dark:border-[#292929] w-full rounded-lg shadow-lg flex flex-col md:flex-row items-center p-6">
+            <FaMobileAlt className="text-7xl md:text-6xl text-blue-400" />
+            <div className="mt-4 md:mt-0 text-center md:text-left">
               <h2 className="text-2xl font-semibold text-black dark:text-white">
                 Mobile App Development
               </h2>
@@ -59,9 +61,10 @@ export default function About() {
               </p>
             </div>
           </div>
-          <div className="border-2 bg-[#FCF4FF] dark:bg-[#111111] gap-6 dark:border-2 dark:border-[#292929] w-full h-48 rounded-lg shadow-lg flex items-center p-6">
-            <FaWordpress size={60} className="text-6xl mr-4 text-blue-800" />
-            <div>
+          {/** WordPress Design **/}
+          <div className="border-2 bg-[#FCF4FF] dark:bg-[#111111] gap-6 dark:border-2 dark:border-[#292929] w-full rounded-lg shadow-lg flex flex-col md:flex-row items-center p-6">
+            <FaWordpress className="text-7xl md:text-6xl text-blue-800" />
+            <div className="mt-4 md:mt-0 text-center md:text-left">
               <h2 className="text-2xl font-semibold text-black dark:text-white">
                 WordPress Design
               </h2>
@@ -70,9 +73,10 @@ export default function About() {
               </p>
             </div>
           </div>
-          <div className="border-2 bg-[#FEFAF0] dark:bg-[#111111] dark:border-2 gap-6 dark:border-[#292929] w-full h-48 rounded-lg shadow-lg flex items-center p-6">
-            <FaServer className="text-6xl mr-4 text-gray-600" />
-            <div>
+          {/** Software Management **/}
+          <div className="border-2 bg-[#FEFAF0] dark:bg-[#111111] gap-6 dark:border-2 dark:border-[#292929] w-full rounded-lg shadow-lg flex flex-col md:flex-row items-center p-6">
+            <FaServer className="text-7xl md:text-6xl text-gray-600" />
+            <div className="mt-4 md:mt-0 text-center md:text-left">
               <h2 className="text-2xl font-semibold text-black dark:text-white">
                 Software Management
               </h2>
@@ -81,9 +85,10 @@ export default function About() {
               </p>
             </div>
           </div>
-          <div className="border-2 bg-[#FFF4F4] dark:bg-[#111111] gap-6 dark:border-2 dark:border-[#292929] w-full h-48 rounded-lg shadow-lg flex items-center p-6">
-            <MdOutlineArchitecture className="text-6xl mr-4 text-gray-600" />
-            <div>
+          {/** System Design & Architecture **/}
+          <div className="border-2 bg-[#FFF4F4] dark:bg-[#111111] gap-6 dark:border-2 dark:border-[#292929] w-full rounded-lg shadow-lg flex flex-col md:flex-row items-center p-6">
+            <MdOutlineArchitecture className="text-7xl md:text-6xl text-gray-600" />
+            <div className="mt-4 md:mt-0 text-center md:text-left">
               <h2 className="text-2xl font-semibold text-black dark:text-white">
                 System Design & Architecture
               </h2>
