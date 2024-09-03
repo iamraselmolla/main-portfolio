@@ -36,7 +36,7 @@ const projectData = [
   // Add more project objects here if needed
 ];
 
-function Projects() {
+const Projects = () => {
   return (
     <div className="bg-white dark:bg-[#0D0D0D] rounded-2xl my-9">
       <div className="py-12 px-4 sm:px-6 md:px-8 w-full">
@@ -50,43 +50,39 @@ function Projects() {
           {projectData.map((project, index) => (
             <div key={index} className="bg-[#F8FBFB] dark:bg-[#1a1a1a] rounded-lg shadow-lg overflow-hidden">
               <div className="overflow-scroll h-96 w-full scrollbar-hide cursor-pointer">
-                <Image src={project.image} alt=""></Image>
+                <Image src={project?.image} alt=""></Image>
               </div>
               <div className="p-6">
                 <h3 className="text-2xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-[#0d9244] to-[#57e793]">
-                  {project.title}
+                  {project?.title}
                 </h3>
                 <p className="text-sm text-gray-700 dark:text-gray-300 mt-2">
-                  {project.description}
+                  {project?.description}
                 </p>
                 <div className="flex justify-between items-center mt-4">
                   {project?.liveLink && (
-                    <a
-                      href={`${project.liveLink}`} // External link, so use <a> tag
-                      target="_blank"
-                      rel="noopener noreferrer"
+                    <Link
+                      href={project?.liveLink} // Set the correct href here
                       className="text-green-500 flex items-center text-sm hover:text-green-600 transition-colors duration-300"
                     >
                       Live Preview
                       <LuExternalLink className="ml-2" />
-                    </a>
+                    </Link>
                   )}
                   {project?.githubLink && (
-                    <a
-                      href={`${project.githubLink}`} // External link, so use <a> tag
-                      target="_blank"
-                      rel="noopener noreferrer"
+                    <Link
+                      href={project?.githubLink} // Set the correct href here
                       className="text-gray-700 dark:text-gray-300 flex items-center text-sm hover:text-gray-500 transition-colors duration-300"
                     >
                       GitHub
                       <LuGitHub className="ml-2" />
-                    </a>
+                    </Link>
                   )}
 
                 </div>
-                {project.skills && (
+                {project?.skills && (
                   <div className="mt-4 flex flex-wrap gap-2">
-                    {project.skills.map((skill, idx) => (
+                    {project?.skills.map((skill, idx) => (
                       <span
                         key={idx}
                         className="bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 text-xs font-medium py-1 px-2 rounded-full"
