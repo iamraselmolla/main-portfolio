@@ -1,6 +1,8 @@
 import React from "react";
 import Image from "next/image";
-import { LuExternalLink, LuGitHub } from "react-icons/lu";
+import { RiExternalLinkFill } from "react-icons/ri";
+import { RxGithubLogo } from "react-icons/rx";
+
 import Link from "next/link";
 import Footer from "./Footer";
 import daeImage from "../../assets/Images/dae.png";
@@ -62,20 +64,22 @@ const Projects = () => {
                 <div className="flex justify-between items-center mt-4">
                   {project?.liveLink && (
                     <Link
+                      target="_blank"
                       href={project?.liveLink} // Set the correct href here
                       className="text-green-500 flex items-center text-sm hover:text-green-600 transition-colors duration-300"
                     >
                       Live Preview
-                      <LuExternalLink className="ml-2" />
+                      <RiExternalLinkFill className="ml-2" />
                     </Link>
                   )}
                   {project?.githubLink && (
                     <Link
+                      target="_blank"
                       href={project?.githubLink} // Set the correct href here
                       className="text-gray-700 dark:text-gray-300 flex items-center text-sm hover:text-gray-500 transition-colors duration-300"
                     >
                       GitHub
-                      <LuGitHub className="ml-2" />
+                      <RxGithubLogo className="ml-2" />
                     </Link>
                   )}
 

@@ -3,7 +3,7 @@ import { FaReact, FaWordpress, FaMobileAlt, FaDatabase, FaServer } from "react-i
 import { MdOutlineArchitecture } from "react-icons/md";
 import Footer from "./Footer";
 
-export default function About() {
+const About = () => {
   return (
     <div className="bg-white dark:bg-[#111111] rounded-2xl my-9">
       <div className="w-full p-8 py-12">
@@ -103,3 +103,5 @@ export default function About() {
     </div>
   );
 }
+
+export default About;
