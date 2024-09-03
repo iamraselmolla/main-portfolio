@@ -4,6 +4,7 @@ import { LuExternalLink, LuGitHub } from "react-icons/lu";
 import Link from "next/link";
 import Footer from "./Footer";
 import daeImage from "../../assets/Images/dae.png";
+import bengalShop from "../../assets/Images/bengal-shop.png";
 
 // Dummy data for demonstration. Replace with actual image paths and links.
 const projectData = [
@@ -13,6 +14,14 @@ const projectData = [
     description: "Application for Department Of Agricultural Extension.",
     liveLink: "https://dae-app.vercel.app/",
     githubLink: "https://github.com/iamraselmolla",
+    skills: ["React", "Next.js", "MongoDB", "Node.js"]
+  },
+  {
+    image: bengalShop, // Ensure the path is correct
+    title: "Bengal Shop",
+    description: "Application for Fresh and Organic Food.",
+    liveLink: "https://iamraselmolla-bengal-shop.web.app/",
+    githubLink: "https://github.com/iamraselmolla/bengal-shop",
     skills: ["React", "Next.js", "MongoDB", "Node.js"]
   },
   // Add more project objects here if needed
