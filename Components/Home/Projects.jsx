@@ -5,6 +5,7 @@ import Link from "next/link";
 import Footer from "./Footer";
 import daeImage from "../../assets/Images/dae.png";
 import bengalShop from "../../assets/Images/bengal-shop.png";
+import buyWatch from "../../assets/Images/buy-watch.png";
 
 // Dummy data for demonstration. Replace with actual image paths and links.
 const projectData = [
@@ -22,6 +23,14 @@ const projectData = [
     description: "Application for Fresh and Organic Food.",
     liveLink: "https://iamraselmolla-bengal-shop.web.app/",
     githubLink: "https://github.com/iamraselmolla/bengal-shop",
+    skills: ["React", "Next.js", "MongoDB", "Node.js"]
+  },
+  {
+    image: buyWatch, // Ensure the path is correct
+    title: "Buy and Sell Watch",
+    description: "A store where user can buy and sell watches. take part in auction and be the highest rate giver",
+    liveLink: "https://rasel-buy-watch.web.app/",
+    githubLink: "https://github.com/iamraselmolla/hand-wtach-garaje-client-module",
     skills: ["React", "Next.js", "MongoDB", "Node.js"]
   },
   // Add more project objects here if needed
