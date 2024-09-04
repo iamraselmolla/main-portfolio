@@ -10,6 +10,8 @@ import { BiMailSend } from "react-icons/bi";
 import { IoLocationSharp } from "react-icons/io5";
 import { FaDownload } from "react-icons/fa";
 import { saveAs } from "file-saver";
+import { TbBrandFiverr } from "react-icons/tb";
+
 import Link from "next/link";
 
 export default function FixedDetails() {
@@ -24,7 +26,7 @@ export default function FixedDetails() {
       <div className="w-full mx-auto relative bg-white dark:bg-[#111111] px-6 rounded-[20px]  ">
         <div>
           <Image
-            class=" absolute left-[50%] transform -translate-x-[50%] h-[240px] drop-shadow-xl mx-auto  mt-[-140px]"
+            className=" absolute left-[50%] transform -translate-x-[50%] h-[240px] drop-shadow-xl mx-auto  mt-[-140px]"
             draggable={false}
             src={profile}
             alt="profile"
@@ -69,6 +71,14 @@ export default function FixedDetails() {
               >
                 <RiLinkedinFill />
               </Link>
+              <Link
+                href={"https://www.fiverr.com/raselmola6336"}
+                target="_blank"
+                className="text-xl bg-[#F3F6F6] dark:bg-[#1D1D1D] p-2 rounded-lg text-[#1dbf73] hover:bg-gradient-to-l to-[#1dbf73] from-[#1aa764] hover:text-white"
+              >
+                <TbBrandFiverr />
+              </Link>
+
             </div>
             <div className="bg-[#F3F6F6] dark:bg-[#1D1D1D] rounded-lg p-5 divide-y dark:divide-slate-800">
               <div className="flex items-center my-2">
