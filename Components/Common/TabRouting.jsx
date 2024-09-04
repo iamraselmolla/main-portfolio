@@ -1,12 +1,12 @@
 import React, { useState } from "react";
-import About from "./About";
-import Projects from "./Projects";
 import { AiOutlineUser } from "react-icons/ai";
 import { HiOutlineDocumentText } from "react-icons/hi";
 import { FaToolbox } from "react-icons/fa";
-import Resume from "./Resume";
-import Contact from "./Contact";
 import { MdContactMail } from "react-icons/md";
+import About from "../Home/about/About";
+import Resume from "../Home/resume/Resume";
+import Projects from "../Home/projects/Projects";
+import Contact from "../Home/contact/Contact";
 
 export default function TabRouting() {
   const [activeTab, setActiveTab] = useState(1);
@@ -22,8 +22,8 @@ export default function TabRouting() {
               aria-controls="tabs-with-underline-1"
               role="tab"
               className={`cursor-pointer bg-[#F3F6F6] dark:bg-[#1D1D1D] rounded-2xl p-2 text-center w-20 h-20 hover:bg-gradient-to-l to-[#23CE6B] from-[#286e45] hover:text-white active ${activeTab == 1
-                  ? "bg-gradient-to-l to-[#23CE6B] from-[#286e45]"
-                  : ""
+                ? "bg-gradient-to-l to-[#23CE6B] from-[#286e45]"
+                : ""
                 }`}
               onClick={() => setActiveTab(1)}
             >
@@ -40,8 +40,8 @@ export default function TabRouting() {
               aria-controls="tabs-with-underline-2"
               role="tab"
               className={`cursor-pointer bg-[#F3F6F6] dark:bg-[#1D1D1D] rounded-2xl p-2 text-center w-20 h-20 hover:bg-gradient-to-l to-[#23CE6B] from-[#286e45] hover:text-white active ${activeTab == 2
-                  ? "bg-gradient-to-l to-[#23CE6B] from-[#286e45]"
-                  : ""
+                ? "bg-gradient-to-l to-[#23CE6B] from-[#286e45]"
+                : ""
                 }`}
               onClick={() => setActiveTab(2)}
             >
@@ -59,8 +59,8 @@ export default function TabRouting() {
               aria-controls="tabs-with-underline-3"
               role="tab"
               className={`cursor-pointer bg-[#F3F6F6] dark:bg-[#1D1D1D] rounded-2xl p-2 text-center w-20 h-20 hover:bg-gradient-to-l to-[#23CE6B] from-[#286e45] hover:text-white active ${activeTab == 3
-                  ? "bg-gradient-to-l to-[#23CE6B] from-[#286e45]"
-                  : ""
+                ? "bg-gradient-to-l to-[#23CE6B] from-[#286e45]"
+                : ""
                 }`}
               onClick={() => setActiveTab(3)}
             >
@@ -78,8 +78,8 @@ export default function TabRouting() {
               aria-controls="tabs-with-underline-4"
               role="tab"
               className={`cursor-pointer bg-[#F3F6F6] dark:bg-[#1D1D1D] rounded-2xl p-2 text-center w-20 h-20 hover:bg-gradient-to-l to-[#23CE6B] from-[#286e45] hover:text-white active ${activeTab == 4
-                  ? "bg-gradient-to-l to-[#23CE6B] from-[#286e45]"
-                  : ""
+                ? "bg-gradient-to-l to-[#23CE6B] from-[#286e45]"
+                : ""
                 }`}
               onClick={() => setActiveTab(4)}
             >

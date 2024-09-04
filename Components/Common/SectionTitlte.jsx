@@ -2,7 +2,7 @@ import React from 'react';
 
 const SectionTitlte = ({ title }) => {
     return (
-        <div className="flex items-center">
+        <div className="flex items-center pb-8">
             <h2 className="text-lg lg:text-3xl text-black dark:text-white">
                 {title}
             </h2>

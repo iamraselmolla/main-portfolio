@@ -2,14 +2,14 @@ import React from "react";
 import Image from "next/image";
 import { RiExternalLinkFill } from "react-icons/ri";
 import { RxGithubLogo } from "react-icons/rx";
-
 import Link from "next/link";
-import Footer from "./Footer";
-import daeImage from "../../assets/Images/dae.png";
-import bengalShop from "../../assets/Images/bengal-shop.png";
-import buyWatch from "../../assets/Images/buy-watch.png";
-import assetListing from "../../assets/Images/asset.png";
-import research from "../../assets/Images/research.png";
+import daeImage from "../../../assets/Images/dae.png";
+import bengalShop from "../../../assets/Images/bengal-shop.png";
+import buyWatch from "../../../assets/Images/buy-watch.png";
+import assetListing from "../../../assets/Images/asset.png";
+import research from "../../../assets/Images/research.png";
+import SectionTitlte from "@/Components/Common/SectionTitlte";
+import Footer from "@/Components/Common/Footer";
 
 // Dummy data for demonstration. Replace with actual image paths and links.
 const projectData = [
@@ -60,12 +60,7 @@ const Projects = () => {
   return (
     <div className="bg-white dark:bg-[#0D0D0D] rounded-2xl my-9">
       <div className="py-12 px-4 sm:px-6 md:px-8 w-full">
-        <div className="flex items-center pb-8">
-          <h2 className="text-2xl lg:text-4xl text-black dark:text-white font-bold">
-            Projects
-          </h2>
-          <div className="border border-green-400 w-32 ml-6" />
-        </div>
+        <SectionTitlte title="Projects" />
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {projectData.map((project, index) => (
             <div key={index} className="bg-[#F8FBFB] dark:bg-[#1a1a1a] rounded-lg shadow-lg overflow-hidden">

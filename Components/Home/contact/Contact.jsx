@@ -1,8 +1,8 @@
 import React, { useRef } from "react";
-import Footer from "./Footer";
 import emailjs from "@emailjs/browser";
 import swal from "sweetalert";
-import SectionTitlte from "../Common/SectionTitlte";
+import SectionTitlte from "@/Components/Common/SectionTitlte";
+import Footer from "@/Components/Common/Footer";
 
 export default function Contact() {
   const form = useRef();

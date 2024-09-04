@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaBriefcase, FaCalendarAlt, FaLink } from 'react-icons/fa';
+import SectionTitlte from '../../Common/SectionTitlte';
 
 const Experineces = () => {
     const experiences = [
@@ -27,10 +28,7 @@ const Experineces = () => {
     ];
     return (
         <div className="mb-12">
-            <div className="flex items-center pb-8">
-                <h2 className="text-xl lg:text-4xl text-black dark:text-white">Experience</h2>
-                <div className="border border-green-400 w-28 ml-14"></div>
-            </div>
+            <SectionTitlte title={"Experiences"} />
             <div className="space-y-6">
                 {experiences.map((experience, index) => (
                     <div key={index} className="relative bg-white dark:bg-gray-900 p-6 shadow-lg rounded-lg hover:shadow-2xl transition-shadow duration-300">

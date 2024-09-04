@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaBootstrap, FaCss3, FaDatabase, FaHtml5, FaJs, FaLaptopCode, FaMobileAlt, FaReact, FaServer, FaWordpress } from 'react-icons/fa';
+import SectionTitlte from '../../Common/SectionTitlte';
 
 const Skills = () => {
     const skills = [
@@ -20,17 +21,12 @@ const Skills = () => {
     ];
     return (
         <div className="mb-12">
-            <div className="flex items-center pb-8">
-                <h2 className="text-xl lg:text-4xl text-black dark:text-white">
-                    Working Skills
-                </h2>
-                <div className="border border-green-400 w-28 ml-14"></div>
-            </div>
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-2 px-2 lg:px-0">
+            <SectionTitlte title={'Working Skills'} />
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6 px-2 lg:px-0">
                 {skills.map((skill, index) => (
                     <div
                         key={index}
-                        className="bg-white dark:bg-gray-800 p-3 justify-center rounded-lg shadow-md transition-transform transform hover:scale-105 hover:shadow-xl flex items-center"
+                        className="bg-white dark:bg-gray-800 px-3 py-6 justify-center rounded-lg shadow-md transition-transform transform hover:scale-105 hover:shadow-xl flex items-center"
                         style={{ borderColor: skill.borderColor, borderWidth: "2px" }}
                     >
                         <div className={`text-4xl bg-opacity-10 mr-4 ${skill.color}`}>

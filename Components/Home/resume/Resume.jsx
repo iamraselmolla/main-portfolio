@@ -1,10 +1,11 @@
 import React from "react";
-import Education from "./Education";
-import ProfessionalCourses from "./ProfessionalCourses";
-import Footer from "./Footer";
-import Knowledge from "./Knowledge";
 import Skills from "./Skills";
 import Experineces from "./Experineces";
+import Knowledge from "./Knowledge";
+import Education from "./Education";
+import ProfessionalCourses from "./ProfessionalCourses";
+import Footer from "@/Components/Common/Footer";
+
 
 export default function Resume() {
 

@@ -1,8 +1,8 @@
 import React from "react";
 import { FaReact, FaWordpress, FaMobileAlt, FaDatabase, FaServer } from "react-icons/fa";
 import { MdOutlineArchitecture } from "react-icons/md";
-import Footer from "./Footer";
-import SectionTitlte from "../Common/SectionTitlte";
+import Footer from "@/Components/Common/Footer";
+import SectionTitlte from "@/Components/Common/SectionTitlte";
 
 const aboutItems = [
   {

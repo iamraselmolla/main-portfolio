@@ -1,7 +1,7 @@
 import Navbar from "@/Components/Common/Navbar";
-import FixedDetails from "@/Components/Home/FixedDetails";
-import TabRouting from "@/Components/Home/TabRouting";
+import FixedDetails from "@/Components/Common/FixedDetails";
 import { useEffect } from "react";
+import TabRouting from "@/Components/Common/TabRouting";
 
 export default function Home() {
   useEffect(() => {
