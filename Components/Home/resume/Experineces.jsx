@@ -29,11 +29,14 @@ const Experineces = () => {
     return (
         <div className="mb-12">
             <SectionTitlte title={"Experiences"} />
-            <div className="space-y-6">
+            <div className="space-y-8">
                 {experiences.map((experience, index) => (
-                    <div key={index} className="relative bg-white dark:bg-gray-900 p-6 shadow-lg rounded-lg hover:shadow-2xl transition-shadow duration-300">
+                    <div
+                        key={index}
+                        className="relative bg-white dark:bg-gray-900 p-6 shadow-lg rounded-lg transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-2xl"
+                    >
                         <div className="flex items-start space-x-4">
-                            <div className="w-12 h-12 bg-gradient-to-br from-green-500 to-teal-500 rounded-full flex items-center justify-center text-white text-2xl font-bold">
+                            <div className="w-12 h-12 bg-gradient-to-br from-green-500 to-teal-500 rounded-full flex items-center justify-center text-white text-2xl font-bold transition-transform duration-300 ease-in-out transform hover:rotate-12">
                                 <FaBriefcase />
                             </div>
                             <div className="flex-1">
@@ -48,7 +51,12 @@ const Experineces = () => {
                                 {experience.details && (
                                     <p className="mt-2 text-gray-700 dark:text-gray-400">{experience.details}</p>
                                 )}
-                                <a href={experience.link} target="_blank" rel="noopener noreferrer" className="inline-flex items-center mt-2 text-green-500 hover:text-green-600 transition-colors duration-200">
+                                <a
+                                    href={experience.link}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="inline-flex items-center mt-2 text-green-500 hover:text-green-600 transition-colors duration-200"
+                                >
                                     <FaLink className="mr-1" />
                                     <span>Company Website</span>
                                 </a>

@@ -9,43 +9,31 @@ const aboutItems = [
     icon: <FaReact className="text-6xl text-blue-600" />,
     title: "Front-end Development",
     description: "Creating interactive and visually appealing user interfaces using modern technologies like React.js, Next.js, and Tailwind CSS.",
-    bgColor: "#FCF4FF",
-    borderColor: "border-blue-600",
   },
   {
     icon: <FaDatabase className="text-6xl text-green-700" />,
     title: "Full Stack Application Development",
     description: "Building robust and scalable web applications using a combination of front-end and back-end technologies.",
-    bgColor: "#FEFAF0",
-    borderColor: "border-green-700",
   },
   {
     icon: <FaMobileAlt className="text-6xl text-blue-400" />,
     title: "Mobile App Development",
     description: "Developing high-quality mobile applications using React Native to provide seamless user experiences.",
-    bgColor: "#FFF4F4",
-    borderColor: "border-blue-400",
   },
   {
     icon: <FaWordpress className="text-6xl text-blue-800" />,
     title: "WordPress Design",
     description: "Designing and developing WordPress sites with a focus on creating engaging and functional web experiences.",
-    bgColor: "#FCF4FF",
-    borderColor: "border-blue-800",
   },
   {
     icon: <FaServer className="text-6xl text-gray-600" />,
     title: "Backend Development",
     description: "Designing and implementing server-side logic and APIs to support and enhance front-end functionality.",
-    bgColor: "#FEFAF0",
-    borderColor: "border-gray-600",
   },
   {
     icon: <MdOutlineArchitecture className="text-6xl text-gray-600" />,
     title: "System Design & Architecture",
     description: "Designing scalable and efficient system architectures to meet complex software requirements.",
-    bgColor: "#FFF4F4",
-    borderColor: "border-gray-600",
   },
 ];
 
@@ -66,21 +54,24 @@ const About = () => {
           </h2>
           <div className="border border-green-400 w-24 lg:w-28 ml-10"></div>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="space-y-8">
           {aboutItems.map((item, index) => (
             <div
               key={index}
-              className={`border-2 ${item.bgColor} dark:bg-[#111111] ${item.borderColor} rounded-lg shadow-lg flex flex-col items-center p-6 text-center`}
+              className={`flex flex-col md:flex-row items-center ${index % 2 === 0 ? "" : "md:flex-row-reverse"
+                } bg-white dark:bg-[#222] shadow-2xl duration-500 rounded-lg p-6 transition-transform transform hover:scale-105 hover:shadow-3xl`}
             >
-              <div className={`border-4 ${item.borderColor} rounded-full p-4`}>
+              <div className="flex-shrink-0 mb-4 md:mb-0 md:mr-6 transition-transform transform hover:scale-110">
                 {item.icon}
               </div>
-              <h2 className="text-xl lg:text-2xl font-semibold text-black dark:text-white mt-4">
-                {item.title}
-              </h2>
-              <p className="text-base text-[#7B7B7B] dark:text-[#A6A6A6] mt-2">
-                {item.description}
-              </p>
+              <div>
+                <h2 className="text-xl lg:text-2xl font-semibold text-black dark:text-white">
+                  {item.title}
+                </h2>
+                <p className="text-base text-[#7B7B7B] dark:text-[#A6A6A6] mt-2">
+                  {item.description}
+                </p>
+              </div>
             </div>
           ))}
         </div>
@@ -88,6 +79,6 @@ const About = () => {
       <Footer />
     </div>
   );
-}
+};
 
 export default About;
