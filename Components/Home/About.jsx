@@ -2,6 +2,7 @@ import React from "react";
 import { FaReact, FaWordpress, FaMobileAlt, FaDatabase, FaServer } from "react-icons/fa";
 import { MdOutlineArchitecture } from "react-icons/md";
 import Footer from "./Footer";
+import SectionTitlte from "../Common/SectionTitlte";
 
 const aboutItems = [
   {
@@ -52,12 +53,7 @@ const About = () => {
   return (
     <div className="bg-white dark:bg-[#111111] rounded-2xl my-6 px-6 md:px-8 py-12">
       <div className="w-full">
-        <div className="flex items-center">
-          <h2 className="text-lg lg:text-3xl text-black dark:text-white">
-            About Me
-          </h2>
-          <div className="border border-green-400 w-24 lg:w-28 ml-10"></div>
-        </div>
+        <SectionTitlte title={"About Me"} />
         <div>
           <p className="text-sm lg:text-base text-[#646464] dark:text-[#A6A6A6] py-4">
             I’m a dedicated Full Stack Developer with a passion for learning and growth. My experience spans from Web Development at Weblabx.com to completing over 130 projects as a freelancer on Fiverr.com. I recently expanded my skills during a Full Stack Developer internship at Arterns.in. <br />

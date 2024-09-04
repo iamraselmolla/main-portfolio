@@ -2,6 +2,7 @@ import React, { useRef } from "react";
 import Footer from "./Footer";
 import emailjs from "@emailjs/browser";
 import swal from "sweetalert";
+import SectionTitlte from "../Common/SectionTitlte";
 
 export default function Contact() {
   const form = useRef();
@@ -44,12 +45,7 @@ export default function Contact() {
   return (
     <div className="bg-white dark:bg-[#0D0D0D] rounded-2xl  my-9">
       <div className=" py-12 px-2 sm:px-5 md:px-10  w-full    ">
-        <div className="flex items-center pb-8">
-          <h2 className="text-xl lg:text-4xl  text-black dark:text-white ">
-            Contact
-          </h2>
-          <div className="border border-green-400 w-28 ml-14 "></div>
-        </div>
+        <SectionTitlte title={"Get in touch"} />
         <div className=" w-11/12 m-auto ">
           <h2 className="text-2xl">
             Im always open to discussing about new{" "}
