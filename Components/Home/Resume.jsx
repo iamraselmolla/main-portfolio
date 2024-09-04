@@ -72,14 +72,14 @@ export default function Resume() {
             </h2>
             <div className="border border-green-400 w-28 ml-14"></div>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-3 lg:px-0">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 px-2 lg:px-0">
             {skills.map((skill, index) => (
               <div
                 key={index}
-                className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md transition-transform transform hover:scale-105 hover:shadow-xl flex items-center"
+                className="bg-white dark:bg-gray-800 p-3 justify-center rounded-lg shadow-md transition-transform transform hover:scale-105 hover:shadow-xl flex items-center"
                 style={{ borderColor: skill.borderColor, borderWidth: "2px" }}
               >
-                <div className={`text-4xl mr-4 ${skill.color}`}>
+                <div className={`text-4xl bg-opacity-10 mr-4 ${skill.color}`}>
                   {skill.icon}
                 </div>
                 <div>
@@ -136,20 +136,18 @@ export default function Resume() {
             </h2>
             <div className="border border-green-400 w-28 ml-14"></div>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-2">
             {knowledgeItems.map((item, index) => (
               <div
                 key={index}
-                className="bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-lg shadow-lg p-6 flex items-center space-x-4"
+                className="bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 py-8 rounded-lg shadow-lg px-4 flex flex-col items-center text-center transition-transform transform hover:scale-105 hover:shadow-xl"
               >
-                <div className={`w-16 h-16 border-4 ${item.color} rounded-full flex items-center justify-center text-white text-3xl`}>
+                <div className={`w-20 h-20 border-4 ${item.color} rounded-full flex items-center justify-center text-white text-xl mb-2`}>
                   {item.icon}
                 </div>
-                <div>
-                  <h4 className="text-lg font-semibold text-gray-800 dark:text-gray-200">
-                    {item.name}
-                  </h4>
-                </div>
+                <h4 className="text-md font-semibold text-gray-800 dark:text-gray-200">
+                  {item.name}
+                </h4>
               </div>
             ))}
           </div>
