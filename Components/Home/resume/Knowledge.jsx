@@ -13,7 +13,7 @@ const Knowledge = () => {
     ];
 
     return (
-        <div className="mb-12">
+        <div>
             <div className="flex items-center pb-8">
                 <h2 className="text-xl lg:text-4xl text-black dark:text-white">
                     Knowledge

@@ -18,26 +18,26 @@ const Education = () => {
   ];
 
   return (
-    <div className="w-full mb-8">
+    <section className="w-full dark:bg-gray-800">
       <div className="max-w-4xl mx-auto">
-        <div className="flex items-center pb-6">
-          <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 dark:text-white">Education</h2>
-          <div className="border-b-4 border-green-400 w-32 ml-4"></div>
-        </div>
-        <div className="grid gap-6 sm:grid-cols-1 md:grid-cols-2">
+        <header className="flex items-center mb-12">
+          <h2 className="text-4xl font-extrabold text-gray-900 dark:text-white">Education</h2>
+          <div className="border-b-4 border-green-500 w-16 ml-6"></div>
+        </header>
+        <div className="space-y-8">
           {educationData.map((education, index) => (
             <div
               key={index}
-              className="bg-white dark:bg-gray-900 p-6 shadow-lg rounded-lg border-l-4 border-green-500 transform transition-transform hover:-translate-y-1 hover:shadow-xl"
+              className="bg-white dark:bg-gray-900 p-8 shadow-lg rounded-lg border-l-4 border-green-500 transform transition-transform hover:-translate-y-2 hover:shadow-xl hover:border-green-600"
             >
-              <div className="flex items-start mb-4">
-                <div className="w-12 h-12 bg-green-500 dark:bg-green-400 rounded-full flex items-center justify-center text-white text-3xl mr-4">
+              <div className="flex items-start mb-6 space-x-4">
+                <div className="w-14 h-14 bg-green-500 dark:bg-green-400 rounded-full flex items-center justify-center text-white text-3xl">
                   <FaBook />
                 </div>
                 <div>
-                  <h3 className="text-lg font-semibold text-gray-800 dark:text-gray-200">{education.title}</h3>
-                  <p className="text-sm text-gray-600 dark:text-gray-400">{education.institution}</p>
-                  <p className="text-xs text-gray-500 dark:text-gray-500 mt-1">{education.date}</p>
+                  <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-100">{education.title}</h3>
+                  <p className="text-sm text-gray-700 dark:text-gray-300 mt-1">{education.institution}</p>
+                  <p className="text-xs text-gray-500 dark:text-gray-400 mt-1">{education.date}</p>
                 </div>
               </div>
               <p className="text-gray-700 dark:text-gray-300">{education.description}</p>
@@ -45,7 +45,7 @@ const Education = () => {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

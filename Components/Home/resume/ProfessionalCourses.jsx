@@ -30,7 +30,7 @@ export default function ProfessionalCourses() {
     ];
 
     return (
-        <div className="py-12 px-4 md:px-10 w-full">
+        <div>
             <div className="flex items-center pb-8">
                 <h2 className="text-2xl lg:text-3xl font-bold text-gray-900 dark:text-white">
                     Professional Courses
@@ -41,12 +41,12 @@ export default function ProfessionalCourses() {
                 {courses.map((course, index) => (
                     <div
                         key={index}
-                        className="relative bg-white dark:bg-gray-900 p-6 border border-gray-300 dark:border-gray-700 rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300"
+                        className="relative bg-white dark:bg-gray-900 p-6 border border-gray-300 dark:border-gray-700 rounded-xl shadow-lg transition-all duration-500 transform hover:scale-105 hover:shadow-xl"
                     >
-                        <div className="absolute -left-6 top-1/2 transform -translate-y-1/2 w-14 h-14 bg-blue-600 dark:bg-blue-400 rounded-full flex items-center justify-center text-white text-3xl">
+                        <div className="absolute -left-6 top-1/2 transform -translate-y-1/2 w-14 h-14 bg-blue-600 dark:bg-blue-400 rounded-full flex items-center justify-center text-white text-3xl shadow-md transition-all duration-500">
                             <FaCertificate />
                         </div>
-                        <div className="ml-16">
+                        <div className="ml-10">
                             <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-200">{course.title}</h3>
                             <p className="text-sm text-gray-600 dark:text-gray-400 mt-1 line-clamp-3">{course.details}</p>
                             <p className="text-xs text-gray-500 dark:text-gray-500 mt-1">{course.date}</p>
@@ -54,7 +54,7 @@ export default function ProfessionalCourses() {
                                 {course.skills.map((skill, i) => (
                                     <span
                                         key={i}
-                                        className="bg-blue-200 dark:bg-blue-600 text-blue-800 dark:text-blue-200 py-1 px-3 rounded-full text-xs font-semibold"
+                                        className="bg-blue-200 dark:bg-blue-600 text-blue-800 dark:text-blue-200 py-1 px-3 rounded-full text-xs font-semibold transition-all duration-500 hover:scale-105"
                                     >
                                         {skill}
                                     </span>

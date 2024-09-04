@@ -25,7 +25,7 @@ const Skills = () => {
     ];
 
     return (
-        <div className="mb-12">
+        <div>
             <SectionTitlte title={'Working Skills'} />
             <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6 px-2 lg:px-0">
                 {skills.map((skill, index) => (

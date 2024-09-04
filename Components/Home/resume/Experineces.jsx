@@ -27,7 +27,7 @@ const Experineces = () => {
         },
     ];
     return (
-        <div className="mb-12">
+        <div>
             <SectionTitlte title={"Experiences"} />
             <div className="space-y-8">
                 {experiences.map((experience, index) => (
