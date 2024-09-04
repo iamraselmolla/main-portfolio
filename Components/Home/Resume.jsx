@@ -1,6 +1,10 @@
 import Link from "next/link";
 import React from "react";
-import { FaBootstrap, FaCalendarAlt, FaCss3, FaDatabase, FaHtml5, FaJs, FaLaptopCode, FaLink, FaMobileAlt, FaReact, FaServer, FaWordpress } from "react-icons/fa";
+import {
+  FaBootstrap, FaBriefcase, FaCalendarAlt, FaCss3, FaDatabase,
+  FaHtml5, FaJs, FaLaptopCode, FaLink, FaMobileAlt, FaReact,
+  FaServer, FaWordpress
+} from "react-icons/fa";
 import { MdOutlineArchitecture } from "react-icons/md";
 import Education from "./Education";
 import ProfessionalCourses from "./ProfessionalCourses";
@@ -10,7 +14,7 @@ export default function Resume() {
   const skills = [
     { name: "HTML5", icon: <FaHtml5 />, color: "text-orange-500", borderColor: "border-orange-500" },
     { name: "CSS3", icon: <FaCss3 />, color: "text-blue-500", borderColor: "border-blue-500" },
-    { name: "JavaScript (ES6)", icon: <FaJs />, color: "text-yellow-500", borderColor: "border-yellow-500" },
+    { name: "JavaScript", icon: <FaJs />, color: "text-yellow-500", borderColor: "border-yellow-500" },
     { name: "Bootstrap", icon: <FaBootstrap />, color: "text-purple-500", borderColor: "border-purple-500" },
     { name: "Reactjs", icon: <FaReact />, color: "text-blue-600", borderColor: "border-blue-600" },
     { name: "Nextjs", icon: <FaReact />, color: "text-gray-800", borderColor: "border-gray-800" },
@@ -22,6 +26,15 @@ export default function Resume() {
     { name: "REST API", icon: <FaLaptopCode />, color: "text-blue-700", borderColor: "border-blue-700" },
     { name: "React Native", icon: <FaMobileAlt />, color: "text-blue-400", borderColor: "border-blue-400" },
     { name: "WordPress", icon: <FaWordpress />, color: "text-blue-800", borderColor: "border-blue-800" },
+  ];
+
+  const knowledgeItems = [
+    { name: "Programming", icon: <FaLaptopCode />, color: "bg-blue-500" },
+    { name: "WordPress Design", icon: <FaWordpress />, color: "bg-blue-800" },
+    { name: "Mobile App Development", icon: <FaMobileAlt />, color: "bg-blue-400" },
+    { name: "System Design & Architecture", icon: <MdOutlineArchitecture />, color: "bg-gray-600" },
+    { name: "Database Management", icon: <FaDatabase />, color: "bg-green-700" },
+    { name: "React Ecosystem", icon: <FaReact />, color: "bg-blue-600" },
   ];
 
   const experiences = [
@@ -61,14 +74,18 @@ export default function Resume() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-3 lg:px-0">
             {skills.map((skill, index) => (
-              <div key={index} className="flex items-center mb-5 p-3 border-2 rounded-lg" style={{ borderColor: skill.borderColor }}>
-                <div className={`text-3xl mr-4 ${skill.color}`}>
+              <div
+                key={index}
+                className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md transition-transform transform hover:scale-105 hover:shadow-xl flex items-center"
+                style={{ borderColor: skill.borderColor, borderWidth: "2px" }}
+              >
+                <div className={`text-4xl mr-4 ${skill.color}`}>
                   {skill.icon}
                 </div>
-                <div className="flex flex-col">
-                  <span className={`font-semibold ${skill.color}`}>
+                <div>
+                  <h3 className={`text-lg font-semibold ${skill.color}`}>
                     {skill.name}
-                  </span>
+                  </h3>
                 </div>
               </div>
             ))}
@@ -83,13 +100,10 @@ export default function Resume() {
           </div>
           <div className="space-y-6">
             {experiences.map((experience, index) => (
-              <div
-                key={index}
-                className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg transition-shadow duration-300 hover:shadow-xl border border-gray-200 dark:border-gray-700"
-              >
+              <div key={index} className="relative bg-white dark:bg-gray-900 p-6 shadow-lg rounded-lg hover:shadow-2xl transition-shadow duration-300">
                 <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-green-500 dark:bg-green-400 rounded-full flex items-center justify-center text-white text-2xl font-bold">
-                    {index + 1}
+                  <div className="w-12 h-12 bg-gradient-to-br from-green-500 to-teal-500 rounded-full flex items-center justify-center text-white text-2xl font-bold">
+                    <FaBriefcase />
                   </div>
                   <div className="flex-1">
                     <div className="flex items-center justify-between">
@@ -103,15 +117,13 @@ export default function Resume() {
                     {experience.details && (
                       <p className="mt-2 text-gray-700 dark:text-gray-400">{experience.details}</p>
                     )}
-                    <Link href={experience.link} target="_blank" rel="noopener noreferrer" className="inline-flex items-center mt-2 text-green-500 hover:text-green-600 transition-colors duration-200">
+                    <a href={experience.link} target="_blank" rel="noopener noreferrer" className="inline-flex items-center mt-2 text-green-500 hover:text-green-600 transition-colors duration-200">
                       <FaLink className="mr-1" />
                       <span>Company Website</span>
-                    </Link>
+                    </a>
                   </div>
                 </div>
               </div>
-
-
             ))}
           </div>
         </div>
@@ -124,33 +136,25 @@ export default function Resume() {
             </h2>
             <div className="border border-green-400 w-28 ml-14"></div>
           </div>
-          <div className="grid grid-cols-2 gap-4 text-[#505050] dark:text-[#d8d8d8]">
-            <div className="bg-[#EDF2F2] dark:bg-[#1D1D1D] rounded-lg shadow-lg flex items-center justify-center py-6">
-              <FaLaptopCode className="text-2xl mr-2 text-blue-600" />
-              <h4 className="text-lg">Programming</h4>
-            </div>
-            <div className="bg-[#EDF2F2] dark:bg-[#1D1D1D] rounded-lg shadow-lg flex items-center justify-center py-6">
-              <FaWordpress className="text-2xl mr-2 text-blue-800" />
-              <h4 className="text-lg">WordPress Design</h4>
-            </div>
-            <div className="bg-[#EDF2F2] dark:bg-[#1D1D1D] rounded-lg shadow-lg flex items-center justify-center py-6">
-              <FaMobileAlt className="text-2xl mr-2 text-blue-400" />
-              <h4 className="text-lg">Mobile App Development</h4>
-            </div>
-            <div className="bg-[#EDF2F2] dark:bg-[#1D1D1D] rounded-lg shadow-lg flex items-center justify-center py-6">
-              <MdOutlineArchitecture className="text-2xl mr-2 text-gray-600" />
-              <h4 className="text-lg">System Design & Architecture</h4>
-            </div>
-            <div className="bg-[#EDF2F2] dark:bg-[#1D1D1D] rounded-lg shadow-lg flex items-center justify-center py-6">
-              <FaDatabase className="text-2xl mr-2 text-green-700" />
-              <h4 className="text-lg">Database Management</h4>
-            </div>
-            <div className="bg-[#EDF2F2] dark:bg-[#1D1D1D] rounded-lg shadow-lg flex items-center justify-center py-6">
-              <FaReact className="text-2xl mr-2 text-blue-600" />
-              <h4 className="text-lg">React Ecosystem</h4>
-            </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-8">
+            {knowledgeItems.map((item, index) => (
+              <div
+                key={index}
+                className="bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-lg shadow-lg p-6 flex items-center space-x-4"
+              >
+                <div className={`w-16 h-16 border-4 ${item.color} rounded-full flex items-center justify-center text-white text-3xl`}>
+                  {item.icon}
+                </div>
+                <div>
+                  <h4 className="text-lg font-semibold text-gray-800 dark:text-gray-200">
+                    {item.name}
+                  </h4>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
+
         <Education />
         <ProfessionalCourses />
       </div>

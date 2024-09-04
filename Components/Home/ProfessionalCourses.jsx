@@ -17,12 +17,12 @@ export default function ProfessionalCourses() {
                         date: "June 2022 - Dec 2022",
                         title: "Programming Hero",
                         details: "Complete Web Development Course With Jhankar Mahbub",
-                        skills: ["HTML5", "CSS3", "JavaScript (ES6)", "React", "Node.js", "Express", "MongoDB"]
+                        skills: ["HTML5", "CSS3", "JavaScript", "React", "Node.js", "Express", "MongoDB"]
                     }, {
                         date: "Sep 2020 - Jun 2021",
                         title: "Udemy.com",
                         details: "The Complete JavaScript Course: From Zero to Expert! by Jonas Schmedtmann",
-                        skills: ["JavaScript (ES6)", "Asynchronous JavaScript", "JavaScript Fundamentals", "Advanced JavaScript"]
+                        skills: ["JavaScript", "Asynchronous JavaScript", "JavaScript Fundamentals", "Advanced JavaScript"]
                     }, {
                         date: "Nov 2016 - Apr 2017",
                         title: "Computer Palace, Khalispur, Khulna",
