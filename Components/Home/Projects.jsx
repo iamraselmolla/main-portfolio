@@ -14,47 +14,47 @@ import research from "../../assets/Images/research.png";
 // Dummy data for demonstration. Replace with actual image paths and links.
 const projectData = [
   {
-    image: daeImage, // Ensure the path is correct
+    image: daeImage,
     title: "DAE Application",
-    description: "Application for Department Of Agricultural Extension.",
+    description: "An application for the Department of Agricultural Extension, designed to manage project activities, store moments, save notes, and maintain a comprehensive database of farmers' data, streamlining project management processes.",
     liveLink: "https://dae-app.vercel.app/",
-    githubLink: "https://github.com/iamraselmolla",
-    skills: ["React", "Next.js", "MongoDB", "Node.js"]
+    githubLink: "https://github.com/iamraselmolla/dae-project-activities-management",
+    skills: ["React", "MongoDB", "Node.js", "Tailwind", "Cloudinary"]
   },
   {
-    image: bengalShop, // Ensure the path is correct
+    image: bengalShop,
     title: "Bengal Shop",
-    description: "Application for Fresh and Organic Food.",
+    description: "An online store offering fresh and organic foods, providing users with a convenient platform to shop for a wide variety of high-quality, locally sourced produce.",
     liveLink: "https://iamraselmolla-bengal-shop.web.app/",
     githubLink: "https://github.com/iamraselmolla/bengal-shop",
-    skills: ["React", "Next.js", "MongoDB", "Node.js"]
+    skills: ["React"]
   },
   {
-    image: buyWatch, // Ensure the path is correct
+    image: buyWatch,
     title: "Buy and Sell Watch",
-    description: "A store where user can buy and sell watches. take part in auction and be the highest rate giver",
+    description: "A dynamic marketplace for buying and selling watches, where users can participate in auctions and compete to offer the highest bids for luxury timepieces.",
     liveLink: "https://rasel-buy-watch.web.app/",
     githubLink: "https://github.com/iamraselmolla/hand-wtach-garaje-client-module",
-    skills: ["React", "Next.js", "MongoDB", "Node.js"]
+    skills: ["React", "MongoDB", "Node.js", "Tailwind", "Cloudinary"]
   },
   {
-    image: assetListing, // Ensure the path is correct
-    title: "Assest buy, sell & rent",
-    description: "",
+    image: assetListing,
+    title: "Asset Buy, Sell & Rent",
+    description: "A platform for listing, buying, selling, and renting assets, offering users a seamless experience to manage their property transactions with ease.",
     liveLink: "https://assests-listing.netlify.app/",
     githubLink: "https://github.com/iamraselmolla/assests-listing-nextJs",
-    skills: ["React", "Next.js", "MongoDB", "Node.js"]
+    skills: ["Next.js", "MongoDB", "Cloudinary"]
   },
   {
-    image: research, // Ensure the path is correct
+    image: research,
     title: "Research, Conferences & Events",
-    description: "",
+    description: "A dedicated platform for submitting research, organizing conferences, and hosting events, tailored to meet the needs of academic and professional communities.",
     liveLink: "https://submitresearch.netlify.app/",
     githubLink: "https://github.com/iamraselmolla/research",
-    skills: ["React", "Next.js", "MongoDB", "Node.js"]
-  },
-  // Add more project objects here if needed
+    skills: ["Next.js", "MongoDB", "Cloudinary"]
+  }
 ];
+
 
 const Projects = () => {
   return (
