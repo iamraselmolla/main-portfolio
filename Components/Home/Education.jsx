@@ -4,24 +4,6 @@ import { FaBook } from 'react-icons/fa';
 const Education = () => {
   const educationData = [
     {
-      date: "June 2022 - Dec 2022",
-      title: "Complete Web Development Course",
-      institution: "Programming Hero",
-      description: "Comprehensive web development course covering front-end and back-end technologies."
-    },
-    {
-      date: "Sep 2020 - Jun 2021",
-      title: "The Complete JavaScript Course: From Zero to Expert!",
-      institution: "Udemy.com",
-      description: "In-depth JavaScript course covering advanced concepts and modern practices."
-    },
-    {
-      date: "Nov 2016 - Apr 2017",
-      title: "Web Design and Development",
-      institution: "Computer Palace, Khalispur, Khulna",
-      description: "Foundational course in web design and development principles."
-    },
-    {
       date: "Jan 2014 - Feb 2016",
       title: "Marine Diesel Engine Artificer",
       institution: "Bangladesh Institute of Marine Technology",
@@ -29,7 +11,7 @@ const Education = () => {
     },
     {
       date: "Jan 2008 - Mar 2013",
-      title: "S.S.C",
+      title: "Secondary School Certificate (S.S.C)",
       institution: "Adaghat High School",
       description: "Secondary School Certificate, providing a strong foundation in general education."
     }
