@@ -74,7 +74,7 @@ export default function FixedDetails() {
               <Link
                 href={"https://www.fiverr.com/raselmola6336"}
                 target="_blank"
-                className="text-xl bg-[#F3F6F6] dark:bg-[#1D1D1D] p-2 rounded-lg text-[#1dbf73] hover:bg-gradient-to-l to-[#1dbf73] from-[#1aa764] hover:text-white"
+                className="text-xl bg-[#F3F6F6] dark:bg-[#1D1D1D] p-2 rounded-lg text-[#1dbf73] hover:bg-gradient-to-l to-[#23CE6B] from-[#286e45] hover:text-white"
               >
                 <TbBrandFiverr />
               </Link>
