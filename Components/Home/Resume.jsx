@@ -1,9 +1,10 @@
 import Link from "next/link";
 import React from "react";
-import Education from "./Education";
-import Footer from "./Footer";
-import { FaReact, FaWordpress, FaMobileAlt, FaDatabase, FaServer, FaLaptopCode, FaHtml5, FaCss3, FaJs, FaBootstrap } from "react-icons/fa";
+import { FaBootstrap, FaCalendarAlt, FaCss3, FaDatabase, FaHtml5, FaJs, FaLaptopCode, FaLink, FaMobileAlt, FaReact, FaServer, FaWordpress } from "react-icons/fa";
 import { MdOutlineArchitecture } from "react-icons/md";
+import Education from "./Education";
+import ProfessionalCourses from "./ProfessionalCourses";
+import Footer from "./Footer";
 
 export default function Resume() {
   const skills = [
@@ -21,6 +22,30 @@ export default function Resume() {
     { name: "REST API", icon: <FaLaptopCode />, color: "text-blue-700", borderColor: "border-blue-700" },
     { name: "React Native", icon: <FaMobileAlt />, color: "text-blue-400", borderColor: "border-blue-400" },
     { name: "WordPress", icon: <FaWordpress />, color: "text-blue-800", borderColor: "border-blue-800" },
+  ];
+
+  const experiences = [
+    {
+      date: "January 2018 - March 2019",
+      title: "Web Developer (WordPress)",
+      company: "Weblabx.com, Khulna",
+      link: "http://weblabx.com/",
+      details: "Worked on various WordPress projects and customized themes.",
+    },
+    {
+      date: "September 2019 - June 2022",
+      title: "Web Designer and Developer",
+      company: "Fiverr.com",
+      link: "http://fiverr.com/",
+      details: "Completed 130 projects, including web design and development tasks.",
+    },
+    {
+      date: "July 2023 - September 2023",
+      title: "Full Stack Developer Intern",
+      company: "Arterns.in, Uttarakhand, India",
+      link: "http://arterns.in/",
+      details: "Contributed to multiple projects involving front-end and back-end development.",
+    },
   ];
 
   return (
@@ -56,43 +81,38 @@ export default function Resume() {
             <h2 className="text-xl lg:text-4xl text-black dark:text-white">Experience</h2>
             <div className="border border-green-400 w-28 ml-14"></div>
           </div>
-          <div className="space-y-5">
-            <div className="shadow-lg rounded-lg">
-              <div className="w-full h-full dark:border dark:border-[#292929] p-8 bg-[#FCF4FF] rounded-2xl dark:rounded-lg dark:bg-transparent">
-                <p className="text-sm">January 2018 - March 2019</p>
-                <h2 className="text-[16px] mt-2">Web Developer (WordPress)</h2>
-                <p className="text-[12px] text-red-400">
-                  <Link href="http://weblabx.com/" target="_blank">
-                    Weblabx.com, Khulna
-                  </Link>
-                </p>
+          <div className="space-y-6">
+            {experiences.map((experience, index) => (
+              <div
+                key={index}
+                className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg transition-shadow duration-300 hover:shadow-xl border border-gray-200 dark:border-gray-700"
+              >
+                <div className="flex items-start space-x-4">
+                  <div className="w-12 h-12 bg-green-500 dark:bg-green-400 rounded-full flex items-center justify-center text-white text-2xl font-bold">
+                    {index + 1}
+                  </div>
+                  <div className="flex-1">
+                    <div className="flex items-center justify-between">
+                      <h3 className="text-xl font-semibold text-gray-900 dark:text-white">{experience.title}</h3>
+                      <div className="flex items-center text-sm text-gray-500 dark:text-gray-400">
+                        <FaCalendarAlt className="mr-2" />
+                        <span>{experience.date}</span>
+                      </div>
+                    </div>
+                    <p className="mt-2 text-lg text-gray-800 dark:text-gray-300">{experience.company}</p>
+                    {experience.details && (
+                      <p className="mt-2 text-gray-700 dark:text-gray-400">{experience.details}</p>
+                    )}
+                    <Link href={experience.link} target="_blank" rel="noopener noreferrer" className="inline-flex items-center mt-2 text-green-500 hover:text-green-600 transition-colors duration-200">
+                      <FaLink className="mr-1" />
+                      <span>Company Website</span>
+                    </Link>
+                  </div>
+                </div>
               </div>
-            </div>
-            <div className="shadow-lg rounded-lg">
-              <div className="w-full h-full dark:border dark:border-[#292929] p-8 bg-[#FCF4FF] rounded-2xl dark:rounded-lg dark:bg-transparent">
-                <p className="text-sm">September 2019 - June 2022</p>
-                <h2 className="text-[16px] mt-2">Web Designer and Developer</h2>
-                <p className="text-[12px] text-red-400">
-                  <Link href="http://fiverr.com/" target="_blank">
-                    Fiverr.com
-                  </Link>
-                </p>
-                <p className="text-[10px] pt-2 text-[#505050] dark:text-[#d8d8d8]">
-                  Completed 130 projects.
-                </p>
-              </div>
-            </div>
-            <div className="shadow-lg rounded-lg">
-              <div className="w-full h-full dark:border dark:border-[#292929] p-8 bg-[#FCF4FF] rounded-2xl dark:rounded-lg dark:bg-transparent">
-                <p className="text-sm">July 2023 - September 2023</p>
-                <h2 className="text-[16px] mt-2">Full Stack Developer Intern</h2>
-                <p className="text-[12px] text-red-400">
-                  <Link href="http://arterns.in/" target="_blank">
-                    Arterns.in, Uttarakhand, India
-                  </Link>
-                </p>
-              </div>
-            </div>
+
+
+            ))}
           </div>
         </div>
 
@@ -132,6 +152,7 @@ export default function Resume() {
           </div>
         </div>
         <Education />
+        <ProfessionalCourses />
       </div>
       <Footer />
     </div>

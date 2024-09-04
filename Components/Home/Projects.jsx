@@ -47,7 +47,7 @@ const projectData = [
   },
   {
     image: research,
-    title: "Research, Conferences & Events",
+    title: "Research & Conferences",
     description: "A dedicated platform for submitting research, organizing conferences, and hosting events, tailored to meet the needs of academic and professional communities.",
     liveLink: "https://submitresearch.netlify.app/",
     githubLink: "https://github.com/iamraselmolla/research",
