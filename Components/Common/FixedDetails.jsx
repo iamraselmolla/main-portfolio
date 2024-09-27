@@ -72,7 +72,7 @@ export default function FixedDetails() {
                 <RiLinkedinFill />
               </Link>
               <Link
-                href={"https://www.fiverr.com/raselmola6336"}
+                href={"https://www.fiverr.com/raselmolla6336"}
                 target="_blank"
                 className="text-xl bg-[#F3F6F6] dark:bg-[#1D1D1D] p-2 rounded-lg text-[#1dbf73] hover:bg-gradient-to-l to-[#23CE6B] from-[#286e45] hover:text-white"
               >
