@@ -5,11 +5,19 @@ import SectionTitlte from '../../Common/SectionTitlte';
 const Experineces = () => {
     const experiences = [
         {
-            date: "January 2018 - March 2019",
-            title: "Web Developer (WordPress)",
-            company: "Weblabx.com, Khulna",
-            link: "http://weblabx.com/",
-            details: "Worked on various WordPress projects and customized themes.",
+            date: "October 2024 - Present",
+            title: "Software Engineer",
+            company: "GenZam S.p.A",
+            link: "https://www.genzam.it/",
+            details: "Working on fintech projects, involving both front-end and back-end development.",
+            isCurrent: true,
+        },
+        {
+            date: "July 2023 - September 2023",
+            title: "Full Stack Developer Intern",
+            company: "Arterns.in, Uttarakhand, India",
+            link: "http://arterns.in/",
+            details: "Contributed to multiple projects involving front-end and back-end development.",
         },
         {
             date: "September 2019 - June 2022",
@@ -19,13 +27,14 @@ const Experineces = () => {
             details: "Completed 130 projects, including web design and development tasks.",
         },
         {
-            date: "July 2023 - September 2023",
-            title: "Full Stack Developer Intern",
-            company: "Arterns.in, Uttarakhand, India",
-            link: "http://arterns.in/",
-            details: "Contributed to multiple projects involving front-end and back-end development.",
+            date: "January 2018 - March 2019",
+            title: "Web Developer (WordPress)",
+            company: "Weblabx.com, Khulna",
+            link: "http://weblabx.com/",
+            details: "Worked on various WordPress projects and customized themes.",
         },
     ];
+
     return (
         <div>
             <SectionTitlte title={"Experiences"} />
@@ -33,7 +42,9 @@ const Experineces = () => {
                 {experiences.map((experience, index) => (
                     <div
                         key={index}
-                        className="relative bg-white dark:bg-gray-900 p-6 shadow-lg rounded-lg transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-2xl"
+                        className={`relative bg-white dark:bg-gray-900 p-6 shadow-lg rounded-lg transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-2xl ${
+                            experience.isCurrent ? 'border-2 border-green-500' : ''
+                        }`}
                     >
                         <div className="flex items-start space-x-4">
                             <div className="w-12 h-12 bg-gradient-to-br from-green-500 to-teal-500 rounded-full flex items-center justify-center text-white text-2xl font-bold transition-transform duration-300 ease-in-out transform hover:rotate-12">
