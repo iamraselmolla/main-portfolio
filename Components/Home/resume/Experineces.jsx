@@ -7,7 +7,7 @@ const Experineces = () => {
         {
             date: "October 2024 - Present",
             title: "Software Engineer",
-            company: "GenZam S.p.A",
+            company: "GenZam IT",
             link: "https://www.genzam.it/",
             details: "Working on fintech projects, involving both front-end and back-end development.",
             isCurrent: true,
