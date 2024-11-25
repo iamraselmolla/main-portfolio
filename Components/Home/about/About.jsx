@@ -43,7 +43,7 @@ const About = () => {
       <div>
         <SectionTitlte title={"About Me"} />
         <p className="text-sm lg:text-base text-[#646464] dark:text-[#A6A6A6]">
-         ’m a passionate and dedicated Full Stack Developer currently working as a Software Engineer at Genzam.it. With a strong commitment to learning and growth, I bring experience from diverse roles, including Web Development at Weblabx.com and completing over 130 successful projects as a top-rated freelancer on Fiverr.com.
+         I’m a passionate and dedicated Full Stack Developer currently working as a Software Engineer at Genzam.it. With a strong commitment to learning and growth, I bring experience from diverse roles, including Web Development at Weblabx.com and completing over 130 successful projects as a top-rated freelancer on Fiverr.com.
 
 My journey also includes a transformative Full Stack Developer internship at Arterns.in, where I honed my skills in software design, architecture, and engineering. Self-motivated and hard-working, I thrive on tackling complex challenges and contributing to innovative projects. I’m always eager to expand my expertise and drive impactful solutions in the ever-evolving tech landscape.</p>
       </div>
