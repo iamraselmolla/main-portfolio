@@ -40,26 +40,52 @@ const About = () => {
     <div className="bg-white dark:bg-[#111111] rounded-2xl space-y-16 my-6 px-6 md:px-8 py-12">
       <div>
         <SectionTitlte title={"About Me"} />
-        <div className="space-y-4 text-sm lg:text-base text-[#646464] dark:text-[#A6A6A6]">
-          <p className="font-medium text-lg text-blue-600 dark:text-blue-400">
-            Software Engineer & Full Stack Developer
-          </p>
+        
+        {/* Redesigned About Me section with decorative elements */}
+        <div className="relative mt-8 pt-6 pb-4">
+          {/* Decorative quote marks and highlights */}
+          <div className="absolute top-0 left-0 text-6xl text-blue-500/20 dark:text-blue-400/20 font-serif">❝</div>
+          <div className="absolute bottom-0 right-0 text-6xl text-blue-500/20 dark:text-blue-400/20 font-serif">❞</div>
           
-          <p>
-            With a passion for creating elegant solutions to complex problems, I bring a versatile skill set across the entire development stack. Currently serving as a Software Engineer at Genzam.it, I combine technical expertise with a creative approach to deliver exceptional digital experiences.
-          </p>
+          {/* Background accent element */}
+          <div className="absolute top-12 -left-4 w-1 h-3/4 bg-gradient-to-b from-blue-500 to-purple-500 rounded-r-lg"></div>
           
-          <p>
-            My professional journey includes valuable experience as a Web Developer at Weblabx.com, where I sharpened my front-end capabilities. As a top-rated freelancer on Fiverr.com, I've successfully completed over 130 projects, developing a reputation for reliability and quality craftsmanship.
-          </p>
-          
-          <p>
-            My foundation was strengthened through a formative Full Stack Developer internship at Arterns.in, where I gained crucial insights into software design principles, architecture patterns, and engineering best practices.
-          </p>
-          
-          <p>
-            What sets me apart is my commitment to continuous learning and adaptability in the rapidly evolving tech landscape. I approach each project with enthusiasm, determination, and a focus on delivering solutions that exceed expectations.
-          </p>
+          <div className="space-y-6 pl-4 text-sm lg:text-base text-[#646464] dark:text-[#A6A6A6]">
+            {/* Professional title with styled background */}
+            <div className="relative inline-block mb-6">
+              <h3 className="font-bold text-lg text-gray-800 dark:text-white relative z-10 px-4 py-2">
+                Software Engineer & Full Stack Developer
+              </h3>
+              <div className="absolute inset-0 bg-blue-500/10 dark:bg-blue-400/10 -skew-x-6 rounded"></div>
+            </div>
+            
+            {/* First paragraph with visual accent */}
+            <p className="relative pl-6 border-l-4 border-blue-500/30 dark:border-blue-400/30">
+              With a passion for creating elegant solutions to complex problems, I bring a versatile skill set across the entire development stack. Currently serving as a Software Engineer at 
+              <span className="text-blue-600 dark:text-blue-400 font-medium"> Genzam.it</span>, I combine technical expertise with a creative approach to deliver exceptional digital experiences.
+            </p>
+            
+            {/* Second paragraph with different style */}
+            <p className="relative backdrop-blur-sm backdrop-brightness-105 dark:backdrop-brightness-95 p-4 rounded-r-lg">
+              My professional journey includes valuable experience as a Web Developer at 
+              <span className="text-blue-600 dark:text-blue-400 font-medium"> Weblabx.com</span>, where I sharpened my front-end capabilities. As a top-rated freelancer on 
+              <span className="text-blue-600 dark:text-blue-400 font-medium"> Fiverr.com</span>, I've successfully completed over 
+              <span className="text-blue-600 dark:text-blue-400 font-medium"> 130 projects</span>, developing a reputation for reliability and quality craftsmanship.
+            </p>
+            
+            {/* Third paragraph with subtle highlight */}
+            <p className="relative">
+              My foundation was strengthened through a formative Full Stack Developer internship at 
+              <span className="text-blue-600 dark:text-blue-400 font-medium"> Arterns.in</span>, where I gained crucial insights into software design principles, architecture patterns, and engineering best practices.
+            </p>
+            
+            {/* Fourth paragraph with visual distinction */}
+            <div className="relative p-4 bg-gray-50 dark:bg-gray-800/30 rounded-lg border-t border-r border-gray-100 dark:border-gray-700 shadow-sm">
+              <p>
+                What sets me apart is my commitment to continuous learning and adaptability in the rapidly evolving tech landscape. I approach each project with enthusiasm, determination, and a focus on delivering solutions that exceed expectations.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
       <div className="space-y-8">
